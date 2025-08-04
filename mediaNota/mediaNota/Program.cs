@@ -7,24 +7,23 @@ Console.Write("Digite a segunda nota: ");
 double nota2 = Convert.ToDouble(Console.ReadLine());
 double media = (nota1 + nota2) / 2;
 
-Console.Clear();
-
+Console.WriteLine($"A média do aluno {nome} é: {media:F1}");
 switch (media)
 {
-    case >=9 and <=10:
-        Console.WriteLine($"O aluno {nome} está aprovado com conceito A");
+    case >= 9 and <= 10:
+            Console.WriteLine($"O aluno {nome} está aprovado com conceito A");
         break;
-    case >=8 and <8.9:
+    case >= 8 and <= 8.9:
             Console.WriteLine($"O aluno {nome} está aprovado com conceito B");
         break;
-    case >=7 and <7.9:
+    case >= 7 and <= 7.9:
             Console.WriteLine($"O aluno {nome} está aprovado com conceito C");
         break;
-        case >=5 and <6.9:
+    case >= 5 and <= 6.9:
             Console.WriteLine($"O aluno {nome} está recuperação com conceito D");
         break;
     default:
-                Console.WriteLine($"O aluno {nome} está reprovado com conceito F");
+            Console.WriteLine($"O aluno {nome} está reprovado com conceito F");
         break;
 
 }
