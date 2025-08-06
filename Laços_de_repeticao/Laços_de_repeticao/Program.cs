@@ -57,6 +57,8 @@ while (controle > 0)
 media = idade / contador; // Calcula a média das idades
 Console.WriteLine($"A medias das idades é {media}");
 
+
+//////////////////////////////////////////////////////////
 // Outra forma de fazer o mesmo laço de repetição
 
 int cont = -1; // Contador para o laço
