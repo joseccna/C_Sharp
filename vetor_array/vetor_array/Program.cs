@@ -48,3 +48,4 @@ for (int i = 0; i < nota.Length; i++)
 {
     Console.WriteLine($"Nota {i + 1} = {nota[i]}");
 }
+
