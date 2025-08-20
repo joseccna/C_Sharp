@@ -12,6 +12,6 @@ class Program
         conta.Sacar(200.0);
 
         Console.WriteLine($"Titular: {conta.Titular1}"); // Exibe o titular da conta
-        Console.WriteLine($"Saldo atual: {conta.ObterSaldo()}"); // Exibe o saldo atual
+        Console.WriteLine($"Saldo atual: {conta.saldoAtual}"); // Exibe o saldo atual
     }
 }

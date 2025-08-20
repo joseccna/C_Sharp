@@ -11,6 +11,26 @@ namespace Metodo_privado
         private string titular = "";
         private double saldo = 0.0;
 
+        // dia 20-08-2025
+        // Método Get Set para modificar atributos privados.
+
+        public double saldoAtual
+        {
+            get { return saldo; } // Permite acesso ao saldo, mas não permite modificação direta
+            private set
+            {
+                if (value >= 0)
+                {
+                    saldo = value; // Permite apenas valores não negativos
+                }
+            }
+        }
+
+
+
+        //////////////////////////////////
+        // Metodo inicial para acessar atributos privados.
+
         public void Titular(string nome)
         {
             titular = nome;
@@ -32,17 +52,18 @@ namespace Metodo_privado
             }
         }
 
-        public double ObterSaldo()
-        {
-            return saldo;
-        }
+        //public double ObterSaldo()
+        //{
+        //    return saldo;
+        //}
 
         public string Titular1
         {
             get { return titular; }
 
-
         }
 
+
     }
+
 }
