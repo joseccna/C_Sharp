@@ -8,7 +8,7 @@ namespace PolimorfismoHeranca
 {
     internal class Funcionario
     {
-        public string Nome { get; set; }
+        public string Nome { get; set; } = string.Empty;
         public int Idade { get; set; }
 
 
