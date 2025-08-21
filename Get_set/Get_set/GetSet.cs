@@ -8,6 +8,8 @@ namespace Get_set
 {
     internal class GetSet
     {
+        public string Nome { get; set; }
+        public int Idade { get; set; }
 
 
     }
